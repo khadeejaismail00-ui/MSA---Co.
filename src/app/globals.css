@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', Arial, sans-serif; }
+.hero-video { transform: scale(1.02); }
+/* Keep hero headings visually stable on desktop: no breakpoint-driven size changes. */
+.hero-title { font-size: 64px !important; line-height: 1.04 !important; transition: none !important; animation: none !important; transform: none !important; }
+.hero-overlay { background: linear-gradient(90deg, rgba(3,25,55,.78) 0%, rgba(3,25,55,.55) 50%, rgba(3,25,55,.38) 100%); }
+.glass { background: rgba(255,255,255,.10); border: 1px solid rgba(255,255,255,.22); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+#mobileMenu { transition: opacity .25s ease, transform .25s ease; }
+#menuButton span { transition: transform .25s ease, opacity .25s ease; }
+#menuButton.menu-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+#menuButton.menu-open span:nth-child(2) { opacity: 0; }
+#menuButton.menu-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+@media (max-width: 767px) { .hero-title { font-size: 46px !important; line-height: 1.04 !important; } }
+
