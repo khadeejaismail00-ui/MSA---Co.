@@ -33,7 +33,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     '@context': 'https://schema.org', '@type': 'AccountingService', name: 'MSA & Co.',
     description: 'Accounting, taxation, audit, internal audit, advisory and compliance services.',
     url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000', logo: '/MSi.png',
-    telephone: '+92-346-3313940', email: 'msa.hbjk@gmail.com',
+    telephone: '+92-346-3313940', email: 'info@msaco.com.pk',
     address: { '@type': 'PostalAddress', streetAddress: 'Suite 1006, 10th Floor, Gold Tower, Raja Ghanzanfer Ali Road, Saddar', addressLocality: 'Karachi', addressCountry: 'PK' },
     areaServed: 'Pakistan'
   }

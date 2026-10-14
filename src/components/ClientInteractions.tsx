@@ -74,7 +74,7 @@ export default function ClientInteractions({ page, children }: { page: string; c
       const subject=encodeURIComponent('Website Enquiry - MSA & Co.')
       const body=encodeURIComponent(`Dear MSA & Co.,\n\nName: ${name?.value.trim()}\nEmail: ${email?.value.trim()}\nPhone: ${phone?.value.trim() || 'Not provided'}\nService Required: ${service?.value || 'Not specified'}\n\nMessage:\n${message?.value.trim()}\n\nRegards,\n${name?.value.trim()}`)
       success?.classList.remove('hidden')
-      setTimeout(() => { window.location.href=`mailto:msa.hbjk@gmail.com?subject=${subject}&body=${body}` },700)
+      setTimeout(() => { window.location.href=`mailto:info@msaco.com.pk?subject=${subject}&body=${body}` },700)
     }
     form.addEventListener('submit',handler)
     return () => form.removeEventListener('submit',handler)
