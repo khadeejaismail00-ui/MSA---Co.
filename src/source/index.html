@@ -65,8 +65,13 @@
 <!-- =====================================================
          BACKGROUND ACCOUNTING VIDEO
     ====================================================== -->
-<video autoplay="" class="hero-video absolute inset-0 h-full w-full object-cover" loop="" muted="" playsinline="" preload="auto">
-<source src="https://res.cloudinary.com/oncfmefh/video/upload/v1793860429/darkvideo.mp4" type="video/mp4"/>
+<video autoplay="" class="hero-video absolute inset-0 h-full w-full object-cover" loop="" muted="" playsinline="" preload="auto" disablepictureinpicture="" poster="https://res.cloudinary.com/oncfmefh/video/upload/so_0,f_auto,q_auto:eco,w_1280/v1793860429/darkvideo.jpg">
+<!-- Mobile: 720px (~0.8 MB WebM / ~1.2 MB MP4) -->
+<source media="(max-width: 767px)" src="https://res.cloudinary.com/oncfmefh/video/upload/q_auto:eco,vc_vp9,w_720/v1793860429/darkvideo.webm" type="video/webm"/>
+<source media="(max-width: 767px)" src="https://res.cloudinary.com/oncfmefh/video/upload/q_auto:eco,vc_h264,w_720/v1793860429/darkvideo.mp4" type="video/mp4"/>
+<!-- Desktop: 1280px (~2.2 MB WebM / ~2.5 MB MP4) -->
+<source src="https://res.cloudinary.com/oncfmefh/video/upload/q_auto,vc_vp9,w_1280/v1793860429/darkvideo.webm" type="video/webm"/>
+<source src="https://res.cloudinary.com/oncfmefh/video/upload/q_auto:eco,vc_h264,w_1280/v1793860429/darkvideo.mp4" type="video/mp4"/>
 
         Your browser does not support background video.
 
